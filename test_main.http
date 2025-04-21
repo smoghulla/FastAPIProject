@@ -1,0 +1,190 @@
+# Test your FastAPI endpoints
+
+POST http://{{host}}/users
+Accept: application/json
+
+{
+  "email": "smoghull12@icloud.com",
+  "first_name": "Santosh",
+  "last_name": "Moghulla"
+}
+
+###
+POST http://{{host}}/users
+Accept: application/json
+
+{
+  "email": "smoghulla1@icloud.com",
+  "first_name": "Santosh",
+  "last_name": "Moghulla"
+}
+
+###
+POST http://{{host}}/users
+Accept: application/json
+
+{
+  "email": "smoghulla@icloud.com",
+  "first_name": "Santosh",
+  "last_name": "Moghulla"
+}
+
+###
+POST http://{{host}}/users
+Accept: application/json
+
+{
+  "email": "smoghull@icloud.com",
+  "first_name": "Santosh",
+  "last_name": "Moghulla"
+}
+
+###
+GET http://{{host}}/users/1
+Accept: application/json
+
+###
+GET http://{{host}}/users/123
+Accept: application/json
+
+###
+POST http://{{host}}/products
+Accept: application/json
+
+{
+  "product_name": "java",
+  "cost": 25.40,
+  "description": "java the complete reference by Herbert Schildt"
+}
+
+###
+POST http://{{host}}/products
+Accept: application/json
+
+{
+  "product_name": "sql",
+  "cost": 35.40,
+  "description": "sql the complete reference by Herbert Schildt"
+}
+
+###
+POST http://{{host}}/products
+Accept: application/json
+
+{
+  "product_name": "python",
+  "cost": 12.40,
+  "description": "python the complete reference by Herbert Schildt"
+}
+
+###
+GET http://{{host}}/products/1
+Accept: application/json
+
+###
+GET http://{{host}}/products/2
+Accept: application/json
+
+###
+GET http://{{host}}/products/3
+Accept: application/json
+
+###
+GET http://{{host}}/products/123
+Accept: application/json
+
+###
+GET http://{{host}}/products
+Accept: application/json
+
+###
+POST http://{{host}}/orders
+Accept: application/json
+
+{
+  "product_id": 1,
+  "user_id": 2,
+  "quantity": 1
+}
+
+###
+POST http://{{host}}/orders
+Accept: application/json
+
+{
+  "product_id": 2,
+  "user_id": 1,
+  "quantity": 2
+}
+
+###
+POST http://{{host}}/orders
+Accept: application/json
+
+{
+  "product_id": 3,
+  "user_id": 3,
+  "quantity": 3
+}
+
+###
+POST http://{{host}}/orders
+Accept: application/json
+
+{
+  "product_id": 123,
+  "user_id": 1,
+  "quantity": 10
+}
+
+###
+POST http://{{host}}/orders
+Accept: application/json
+
+{
+  "product_id": 1,
+  "user_id": 123,
+  "quantity": 10
+}
+
+###
+GET http://{{host}}/orders/1
+Accept: application/json
+
+###
+GET http://{{host}}/orders/2
+Accept: application/json
+
+###
+GET http://{{host}}/orders/3
+Accept: application/json
+
+###
+GET http://{{host}}/orders/123
+Accept: application/json
+
+###
+POST http://{{host}}/orders/status
+Accept: application/json
+
+{
+  "order_id": 1,
+  "order_status": "paid"
+}
+
+###
+POST http://{{host}}/orders/status
+Accept: application/json
+
+{
+  "order_id": 1,
+  "order_status": "deliver"
+}
+
+###
+GET http://{{host}}/orders/status/1
+Accept: application/json
+
+###
+GET http://{{host}}/orders/status/123
+Accept: application/json
